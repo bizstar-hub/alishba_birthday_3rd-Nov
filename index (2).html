@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160d2b">
+<title>For Alishba 💗 | A Birthday Surprise</title>
+<style>
+:root{--pink:#ff8fbd;--rose:#ff5f9e;--gold:#ffd98a;--ink:#160d2b;--cream:#fff7fb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--cream);font-family:Georgia,"Times New Roman",serif;background:radial-gradient(circle at 20% 10%,#48265e 0,transparent 35%),radial-gradient(circle at 90% 80%,#54234e 0,transparent 35%),linear-gradient(145deg,#100a22,#241032 55%,#130b27);overflow-x:hidden}
+button{font:inherit}
+#stars,.confetti-layer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.star{position:absolute;color:#fff6cf;opacity:.7;animation:twinkle 2.5s infinite alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.55)}}
+main{position:relative;z-index:1;width:min(760px,92%);margin:auto;padding:28px 0 60px}
+.topline{text-align:center;color:#ffd6e8;letter-spacing:3px;font:12px Arial,sans-serif;text-transform:uppercase}
+h1,h2,p{text-align:center}
+h1{font-size:clamp(2.5rem,9vw,5rem);line-height:1.02;margin:22px 0 12px;color:#fff0f7;text-shadow:0 0 25px #ff78b6}
+h2{font-size:clamp(1.8rem,6vw,3rem);color:#ffd3e7;margin:12px 0}
+p{font-size:clamp(1.05rem,3.4vw,1.25rem);line-height:1.7;color:#f8eaf4}
+.hero{padding:40px 12px 28px}
+.hero .subtitle{max-width:570px;margin:18px auto;color:#f6dce9}
+.pill{display:inline-block;border:1px solid #ffffff40;border-radius:99px;padding:9px 16px;color:#ffe1ee;font:12px Arial,sans-serif;letter-spacing:1.4px}
+.card{background:linear-gradient(145deg,#ffffff16,#ffffff08);border:1px solid #ffffff28;border-radius:28px;padding:clamp(22px,5vw,42px);box-shadow:0 20px 70px #05020b66;backdrop-filter:blur(12px);margin:18px 0}
+.progress-wrap{height:7px;background:#ffffff20;border-radius:99px;overflow:hidden;margin:18px 0 8px}
+.progress{height:100%;width:10%;background:linear-gradient(90deg,#ff77b1,#ffe2a2);border-radius:99px;transition:width .5s}
+.step-meta{display:flex;justify-content:space-between;color:#f6cadd;font:12px Arial,sans-serif;letter-spacing:1px}
+.step{display:none;animation:rise .65s both}
+.step.active{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(22px) scale(.98)}to{opacity:1;transform:none}}
+.big-emoji{font-size:clamp(4rem,16vw,7rem);text-align:center;display:block;filter:drop-shadow(0 0 18px #ff9bc8);animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px) rotate(4deg)}}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{border:0;border-radius:99px;padding:14px 24px;background:linear-gradient(100deg,#ff6fa9,#ff9fbe);color:#351027;font-weight:bold;cursor:pointer;box-shadow:0 8px 25px #ff6fa955;transition:.2s}
+.btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 12px 30px #ff6fa977}
+.btn.secondary{background:#ffffff16;color:#ffe5f0;border:1px solid #ffffff40;box-shadow:none}
+.small{font:12px Arial,sans-serif;color:#eac9dc;text-align:center}
+.memory{font-size:clamp(1.15rem,3.6vw,1.45rem);font-style:italic;color:#ffe3ef}
+.heart{display:inline-block;color:#ff78b4;animation:beat 1s infinite}
+@keyframes beat{50%{transform:scale(1.35)}}
+.photo-frame{width:min(250px,70vw);aspect-ratio:1;margin:20px auto;border:7px solid #ffe1ed;border-radius:24px;transform:rotate(-3deg);box-shadow:0 10px 40px #ff80b855;display:grid;place-items:center;background:linear-gradient(135deg,#ffd0e2,#a77ba8);color:#502344;font-size:5rem}
+.cake{position:relative;width:190px;height:145px;margin:38px auto 12px;cursor:pointer}
+.cake-base{position:absolute;bottom:0;width:190px;height:78px;border-radius:12px 12px 22px 22px;background:linear-gradient(#ffb4d1 0 20%,#ff6f9e 20% 100%);box-shadow:inset 0 -9px #d9487e}
+.cake-top{position:absolute;bottom:65px;left:0;width:190px;height:35px;border-radius:50%;background:#fff0f6;border-bottom:7px solid #ff8ab7}
+.candle{position:absolute;bottom:95px;left:88px;width:14px;height:42px;border-radius:5px;background:repeating-linear-gradient(45deg,#fff 0 6px,#ff6da6 6px 12px);z-index:2}
+.flame{position:absolute;bottom:135px;left:88px;width:15px;height:24px;background:#ffd45f;border-radius:50% 50% 45% 45%;filter:drop-shadow(0 0 12px #ffcf54);animation:flicker .5s infinite alternate;z-index:3}
+@keyframes flicker{to{transform:scale(.8) rotate(8deg);opacity:.7}}
+.cake.cut .flame{display:none}.cake.cut .cake-base{transform:skewY(-5deg);filter:brightness(1.2)}
+.cake.cut:after{content:"✦  CAKE CUT!  ✦";position:absolute;top:-34px;left:0;width:100%;text-align:center;color:#ffe1a0;font:bold 13px Arial;letter-spacing:2px}
+.count-number{font-size:clamp(5rem,22vw,9rem);line-height:1;color:#fff0f7;text-shadow:0 0 35px #ff67a7;font-weight:bold;text-align:center;font-variant-numeric:tabular-nums}
+.count-ring{width:min(270px,70vw);aspect-ratio:1;border:5px solid #ffffff25;border-top-color:#ff9bc4;border-right-color:#ffe1a0;border-radius:50%;margin:24px auto;display:grid;place-items:center;animation:spin 4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.count-ring .count-number{animation:unspin 4s linear infinite}
+@keyframes unspin{to{transform:rotate(-360deg)}}
+.letter{background:linear-gradient(145deg,#fff8fb,#ffe5f0);color:#54223e;border-radius:20px;padding:clamp(22px,5vw,38px);box-shadow:0 20px 60px #0005;text-align:left;line-height:1.9;font-size:1.08rem;position:relative}
+.letter p{color:#54223e;text-align:left}
+.letter .sign{text-align:right;font-style:italic;color:#a13d70}
+.hidden{display:none!important}
+#finale{display:none}
+#finale.show{display:block;animation:rise 1s both}
+.firework{position:fixed;width:6px;height:6px;border-radius:50%;pointer-events:none;z-index:8;box-shadow:0 0 18px 5px currentColor;animation:burst 1.5s ease-out forwards}
+@keyframes burst{0%{transform:translate(0,0) scale(.3);opacity:1}100%{transform:translate(var(--x),var(--y)) scale(0);opacity:0}}
+footer{text-align:center;color:#d9b6ce;font:11px Arial,sans-serif;letter-spacing:1px;margin-top:30px}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="stars"></div><div class="confetti-layer" id="confetti"></div>
+<main>
+  <section class="hero">
+    <div class="topline">A little universe made just for you</div>
+    <h1>Happy Birthday,<br><span style="color:#ff9fc7">Alishba!</span></h1>
+    <p class="subtitle">Aaj ka din ordinary ho hi nahi sakta… because someone as precious as you deserves a whole universe of surprises. 💗</p>
+    <div style="text-align:center"><span class="pill">FROM YOUR BESTIE · JAVERIA</span></div>
+  </section>
+
+  <section class="card" id="journey">
+    <div class="step-meta"><span id="stepLabel">SURPRISE 01 / 10</span><span id="stepPercent">10%</span></div>
+    <div class="progress-wrap"><div class="progress" id="progress"></div></div>
+
+    <article class="step active">
+      <span class="big-emoji">🎀</span><h2>Step 1 — Aaj sirf tumhara din!</h2>
+      <p>Alishbaaa! Aaj chand bhi thora extra glow karega, sitaray bhi tumhare naam ke honge. Kyun? Kyun ke meri favourite person ka birthday hai! <span class="heart">♥</span></p>
+      <p class="memory">Ready ho apni 10-step magical birthday journey ke liye?</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">🫶🏻</span><h2>Step 2 — Meri favourite human</h2>
+      <p>Tum sirf bestie nahi ho. Tum woh comfort ho jo boring din ko beautiful bana de, woh pagalpan ho jis par hansi rukti hi nahi, aur woh dost ho jiske hone se life zyada pyari lagti hai.</p>
+      <p class="memory">Bestie goals? No. Bestie forever. 💞</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">🧸</span><h2>Step 3 — Dudu & Bubu forever</h2>
+      <p>Official announcement: Dudu aur Bubu ki friendship department kabhi band nahi hogi! Chahe kitni bhi nok-jhok ho, humari silly baatein, cute names aur pagal moments hamesha special rahenge.</p>
+      <p class="memory">Dudu + Bubu = one iconic duo. 🐻💗</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">🌷</span><h2>Step 4 — Tumhari smile</h2>
+      <p>May your smile never lose its sparkle. Tum jahan jao wahan khushiyan tumhare saath chalain, tumhare dil ki har achi dua ko raasta milay, aur tumhein hamesha woh pyaar mile jo tum deserve karti ho.</p>
+      <p class="memory">Never forget how wonderfully you shine.</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">✨</span><h2>Step 5 — 3 birthday wishes</h2>
+      <p>Ek wish tumhare dreams ke liye. Ek tumhari endless happiness ke liye. Aur teesri… ke humari friendship har naye saal ke saath aur strong, aur crazy hoti jaye!</p>
+      <p class="memory">Close your eyes and make a secret wish. 🌙</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">💌</span><h2>Step 6 — A tiny promise</h2>
+      <p>Main promise karti hoon ke tumhari silly stories sun'ne, tumhari victories celebrate karne, aur tough days mein tumhein cheer up karne ke liye hamesha yahan rahungi. You will always have a bestie in me.</p>
+      <p class="memory">No distance, no busy day can erase a real bond.</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">🎁</span><h2>Step 7 — Invisible gift box</h2>
+      <p>Is box mein duniya ki sab se rare cheezein hain: unlimited hugs, zero-judgement listening, million laughs, emergency chocolate, aur lifetime bestie membership. Tumhara naam already engraved hai!</p>
+      <p class="memory">Tap next to unwrap the biggest surprise…</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">🥹</span><h2>Step 8 — Dil se dua</h2>
+      <p>Allah tumhari zindagi ko sehat, sukoon, barkat, kamyabi aur sachay pyaar se bhar de. Jo cheez tumhare haq mein behtareen ho woh tum tak khoobsurat tareeqay se pohanchay. Ameen. 🤍</p>
+      <p class="memory">You deserve a life that feels like a beautiful dua answered.</p>
+    </article>
+    <article class="step">
+      <span class="big-emoji">🎂</span><h2>Step 9 — Cake cutting time!</h2>
+      <p>Make a wish, birthday girl! Neeche cake par tap karo aur apna special birthday moment unlock karo. 🕯️</p>
+      <div class="cake" id="cake" role="button" tabindex="0" aria-label="Tap to cut the birthday cake"><div class="flame"></div><div class="candle"></div><div class="cake-top"></div><div class="cake-base"></div></div>
+      <p class="small" id="cakeHint">TAP THE CAKE TO CUT IT 💗</p>
+    </article>
+    <article class="step" id="countStep">
+      <span class="big-emoji">⏳</span><h2>Step 10 — The final minute</h2>
+      <p>Alishba, ab bas ek minute… is page ko open rakhna. Har second tumhare liye meri taraf se ek little reminder hai ke you are loved, valued, and so very special.</p>
+      <p class="small">THE GRAND FINALE UNLOCKS WHEN THE TIMER REACHES ZERO</p>
+      <div class="count-ring"><div class="count-number" id="countdown">60</div></div>
+      <p class="memory" id="countMessage">60 seconds of love, just for you. 💗</p>
+      <p class="small">Please don't close or refresh this page during the countdown.</p>
+    </article>
+
+    <div class="actions" id="nav">
+      <button class="btn secondary" id="backBtn" disabled>← Back</button>
+      <button class="btn" id="nextBtn">Begin the magic →</button>
+    </div>
+  </section>
+
+  <section id="finale">
+    <div class="card" style="text-align:center">
+      <span class="big-emoji">🎆🎉💖</span>
+      <div class="pill">SURPRISE UNLOCKED</div>
+      <h1 style="font-size:clamp(2.6rem,10vw,5rem)">HAPPIEST<br>BIRTHDAY!</h1>
+      <h2>Alishba, you are magic. ✨</h2>
+      <p>10 steps complete. 60 seconds of love delivered. And now… Javeria ka dil se likha hua letter. 💌</p>
+    </div>
+    <div class="letter">
+      <h2 style="color:#a13d70;text-align:center">Dear Alishba, 💗</h2>
+      <p>Happy Birthday meri pyaari Alishba!</p>
+      <p>Pata hai, kuch log zindagi mein aate hain aur bas dost nahi rehte — woh family jaisay ban jaate hain. Tum mere liye unhi logon mein se ho. Tumhari presence, tumhari hasi, tumhari cute si pagalpan wali baatein… sab mere liye bohat precious hain.</p>
+      <p>Main chahti hoon tumhari life ka har naya chapter pehle se zyada beautiful ho. Tumhare dreams poore hon, tum kabhi apni worth par doubt na karo, aur jab bhi duniya thori difficult lage, tumhein yaad rahe ke tum akeli nahi ho. Tumhari bestie Javeria tumhare liye cheer karti rahegi.</p>
+      <p>Dudu aur Bubu ki taraf se lifetime hugs, unlimited laughter aur endless memories! Humari friendship mein hamesha yahi warmth, yahi craziness aur yahi pyaar rahe. 🧸</p>
+      <p>Thank you meri life ka itna beautiful part banne ke liye. Aaj ka din tumhari tarah bright, soft, magical aur unforgettable ho. Keep smiling, birthday girl. The world is lucky to have you — and I am luckier to call you my bestie.</p>
+      <p><strong>Happy Birthday once again, meri jaan. I love you loads! 💕</strong></p>
+      <p class="sign">Forever your bestie,<br><strong>Javeria</strong> 💗</p>
+    </div>
+    <div class="card" style="text-align:center">
+      <span class="big-emoji">👑</span><h2>One last thing…</h2>
+      <p>Alishba, never settle for less than the happiness you give to everyone around you. Keep shining, birthday queen!</p>
+      <p style="font-size:2rem">🎂💐🦋💝🎊</p>
+      <button class="btn" onclick="replay()">Replay our 10-step magic ↻</button>
+    </div>
+  </section>
+  <footer>MADE WITH A WHOLE LOT OF LOVE · JAVERIA FOR ALISHBA</footer>
+</main>
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<65;i++){let s=document.createElement('span');s.className='star';s.textContent='✦';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.fontSize=(7+Math.random()*12)+'px';s.style.animationDelay=Math.random()*3+'s';stars.appendChild(s)}
+const steps=[...document.querySelectorAll('.step')], progress=document.getElementById('progress');
+let current=0,timer=null,remaining=60,started=false;
+const next=document.getElementById('nextBtn'),back=document.getElementById('backBtn');
+function render(){
+ steps.forEach((s,i)=>s.classList.toggle('active',i===current));
+ document.getElementById('stepLabel').textContent=`SURPRISE ${String(current+1).padStart(2,'0')} / 10`;
+ document.getElementById('stepPercent').textContent=((current+1)*10)+'%';
+ progress.style.width=((current+1)*10)+'%';
+ back.disabled=current===0;
+ next.textContent=current===8?'Start the final minute →':current===9?'Final minute in progress…':'Next surprise →';
+ next.disabled=current===9;
+}
+next.addEventListener('click',()=>{
+ if(current<9){current++;render();if(current===9)startCountdown();} 
+});
+back.addEventListener('click',()=>{if(current>0&&current<9){current--;render()}});
+function startCountdown(){
+ if(started)return;started=true;remaining=60;
+ const count=document.getElementById('countdown'),msg=document.getElementById('countMessage');
+ timer=setInterval(()=>{
+  remaining--;count.textContent=remaining;
+  if(remaining===45)msg.textContent='A little hug from Javeria, right on time. 🫂';
+  if(remaining===30)msg.textContent='Halfway there… sending you a million smiles. 🌷';
+  if(remaining===15)msg.textContent='Almost there, birthday girl. Get ready! 🎀';
+  if(remaining<=0){clearInterval(timer);document.getElementById('journey').style.display='none';document.getElementById('finale').classList.add('show');fireworks();window.scrollTo({top:0,behavior:'smooth'});}
+ },1000);
+}
+function fireworks(){
+ const colors=['#ff8fbd','#ffd98a','#fff4fa','#b8a4ff','#ff6d80'];
+ for(let wave=0;wave<7;wave++)setTimeout(()=>{
+  for(let j=0;j<34;j++){let f=document.createElement('i');f.className='firework';f.style.left=(12+Math.random()*76)+'vw';f.style.top=(12+Math.random()*65)+'vh';f.style.color=colors[Math.floor(Math.random()*colors.length)];f.style.setProperty('--x',(Math.random()-.5)*260+'px');f.style.setProperty('--y',(Math.random()-.5)*260+'px');document.body.appendChild(f);setTimeout(()=>f.remove(),1600)}
+ },wave*450);
+}
+const cake=document.getElementById('cake');
+function cutCake(){cake.classList.add('cut');document.getElementById('cakeHint').textContent='WISH MADE! CAKE CUT! 🎉';}
+cake.addEventListener('click',cutCake);cake.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();cutCake()}});
+function replay(){if(timer)clearInterval(timer);timer=null;remaining=60;started=false;current=0;document.getElementById('journey').style.display='block';document.getElementById('finale').classList.remove('show');cake.classList.remove('cut');document.getElementById('cakeHint').textContent='TAP THE CAKE TO CUT IT 💗';document.getElementById('countdown').textContent='60';document.getElementById('countMessage').textContent='60 seconds of love, just for you. 💗';render();window.scrollTo({top:0,behavior:'smooth'});}
+render();
+</script>
+</body>
+</html>
